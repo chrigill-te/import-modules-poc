@@ -20,12 +20,13 @@
     "build": "vite build && vue-tsc --emitDeclarationOnly",
     "types": "vue-tsc ",
     "preview": "vite preview",
-    "servor": "servor dist dist/index.html 4600",
+    "servor": "servor dist dist/ 4600",
     "build.and.serve": "npm run build && npm run servor"
   },
   "dependencies": {
     "@te/ui-components": "5.15.25",
     "dayjs": "1.11.10",
+    "servor": "4.0.2",
     "vue": "^3.3.4"
   },
   "devDependencies": {
