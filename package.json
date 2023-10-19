@@ -1,0 +1,37 @@
+{
+  "name": "endpoint-component-lib",
+  "version": "1.0.0",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/endpoint-component-lib.umd.cjs",
+  "module": "./dist/endpoint-component-lib.js",
+  "exports": {
+    ".": {
+      "import": "./dist/endpoint-component-lib.js",
+      "require": "./dist/endpoint-component-lib.umd.cjs"
+    },
+    "./style.css": "./dist/style.css"
+  },
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && vue-tsc --emitDeclarationOnly",
+    "types": "vue-tsc ",
+    "preview": "vite preview",
+    "servor": "servor dist dist/index.html 4600",
+    "build.and.serve": "npm run build && npm run servor"
+  },
+  "dependencies": {
+    "@te/ui-components": "5.15.25",
+    "dayjs": "1.11.10",
+    "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.2.3",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5",
+    "vue-tsc": "^1.8.5"
+  }
+}
